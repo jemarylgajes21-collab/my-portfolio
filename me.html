@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jemaryl Kilakiga Gajes | Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #0b1220;
+    color: white;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #121d30;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #66e3c4;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: #66e3c4;
+}
+
+/* PAGE NAVIGATION */
+.page {
+    display: none;
+    min-height: 100vh;
+    padding: 130px 10% 80px;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(
+        circle at top right,
+        #1d3150, #0b1220 60%
+    );
+}
+
+.page:target {
+    display: flex;
+}
+
+/* DEFAULT HOME */
+body:not(:has(.page:target)) #home {
+    display: flex;
+}
+
+/* CONTENT */
+.content {
+    max-width: 750px;
+    width: 100%;
+}
+
+.content h3 {
+    color: #66e3c4;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.content h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.content h1 span {
+    color: #66e3c4;
+}
+
+.content p {
+    color: #b5c1d3;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.content h2 {
+    color: #66e3c4;
+    margin: 20px 0;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    padding: 13px 25px;
+    background: #66e3c4;
+    color: #0b1220;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: white;
+    transform: translateY(-3px);
+}
+
+/* INFORMATION */
+.info {
+    background: #121d30;
+    padding: 25px;
+    border-radius: 15px;
+    margin: 20px 0;
+    border: 1px solid #66e3c4;
+}
+
+/* CONTACT FORM */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+input, textarea {
+    padding: 15px;
+    border: 1px solid #66e3c4;
+    border-radius: 8px;
+    background: #121d30;
+    color: white;
+    font-size: 16px;
+}
+
+textarea {
+    height: 130px;
+    resize: vertical;
+}
+
+button {
+    padding: 15px;
+    background: #66e3c4;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: white;
+}
+
+/* FOOTER */
+footer {
+    background: #121d30;
+    padding: 20px;
+    text-align: center;
+    color: #b5c1d3;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 5px;
+    }
+
+    nav a {
+        margin: 0 5px;
+        font-size: 13px;
+    }
+
+    .content h1 {
+        font-size: 35px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+
+    .page {
+        padding: 140px 7% 70px;
+    }
+}
+.profile-pic {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #66e3c4;
+    margin-bottom: 25px;
+}
+    </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<header>
+    <div class="logo">Jemaryl.</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#address">Address</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+<section id="home" class="page">
+    <div class="content">
+     
+       <img src="gajes.jpg"
+     alt="My Picture"
+     class="profile-pic">
+       
+     <h3>WELCOME TO MY PORTFOLIO</h3>
+
+        <h1>Hello, I'm
+            <span>Jemaryl Kilakiga Gajes</span>
+        </h1>
+
+        <p>
+            Welcome to my personal portfolio website.
+            Here you can learn more about me,
+            my background, and my contact information.
+        </p>
+
+        <a href="#about" class="btn">Explore More</a>
+
+    </div>
+</section>
+
+<!-- ABOUT ME -->
+<section id="about" class="page">
+    <div class="content">
+        <h3>GET TO KNOW ME</h3>
+
+        <h1>About <span>Me</span></h1>
+
+        <p>
+            Hi! My name is Jemaryl Kilakiga Gajes.
+            I am a student at NORSU siation, taking up
+            Information Technology(IT). My 2-year old baby boy inspires
+            me to work hard and continue pursuing my dreams. I have two older 
+            siblings and two younger siblings.
+
+        </p>
+
+        <h2>My Goals</h2>
+
+        <p>
+            My goal is to finish my studies,
+            improve my programming skills,graduate from college,
+            and get a good job in the future.
+        </p>
+    </div>
+</section>
+
+<!-- ADDRESS -->
+<section id="address" class="page">
+    <div class="content">
+        <h3>MY LOCATION</h3>
+
+        <h1>My <span>Address</span></h1>
+
+        <div class="info">
+            <h2>📍 Home Address</h2>
+            <p>Enter your complete address here.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="page">
+    <div class="content">
+        <h3>LET'S CONNECT</h3>
+
+        <h1>Contact <span>Me</span></h1>
+
+        <div class="info">
+            <p>📧 Email: jemarylgajes21@gamil.com</p>
+            <p>📱 Phone: 09552710943</p>
+            <p>🌐 Facebook: Jemary Kilakiga Gajes</p>
+        </div>
+
+        <form>
+            <input type="text"
+                placeholder="Your Name" required>
+
+            <input type="email"
+                placeholder="Your Email" required>
+
+            <textarea
+                placeholder="Your Message" required>
+            </textarea>
+
+            <button type="submit">
+                Send Message
+            </button>
+        </form>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Jemaryl Kilakiga Gajes |
+       All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
